@@ -1,24 +1,22 @@
 import yaml
+from TestPage import OperationsHelper
 import time
 import random, string
+import logging
 
 with open('testdata.yaml') as f:
     testdata = yaml.safe_load(f)
 
 
-# site = Site(testdata['address'])
-
-
 # копируем пути поле логина и пароля, вводим невалидные данные
-def test_step1(site, login_xpath, pswd_xpath, btn_xpath, result_xpath):
-    input1 = site.find_element('xpath', login_xpath)
-    input1.send_keys('test')
-    input2 = site.find_element('xpath', pswd_xpath)
-    input2.send_keys('test')
-    btn = site.find_element('xpath', btn_xpath)
-    btn.click()
-    err_label = site.find_element('xpath', result_xpath)
-    assert err_label.text == '401'
+def test_step1(browser):
+    logging.info('Test 1 start')
+    testpage = OperationsHelper(browser)
+    testpage.go_to_site()
+    testpage.enter_login('test')
+    testpage.enter_pswd('test')
+    testpage.click_login_button()
+    assert testpage.get_error_text() == '401'
 
 
 # css_selector = 'span.mdc-text-field__ripple'
