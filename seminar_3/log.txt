@@ -1,9 +1,28 @@
-2023-12-07 23:56:50 INFO ====== WebDriver manager ======
-2023-12-07 23:56:53 INFO Get LATEST chromedriver version for google-chrome
-2023-12-07 23:56:53 INFO Get LATEST chromedriver version for google-chrome
-2023-12-07 23:56:54 INFO Driver [C:\Users\jo467\.wdm\drivers\chromedriver\win64\120.0.6099.71\chromedriver-win32/chromedriver.exe] found in cache
-2023-12-07 23:56:55 INFO Test 1 start
-2023-12-07 23:56:57 INFO send test to element //*[@id="login"]/div[1]/label/input
-2023-12-07 23:56:57 INFO send test to element //*[@id="login"]/div[2]/label/input
-2023-12-07 23:56:57 INFO Click logging button
-2023-12-07 23:56:59 INFO We find text 401 in error field //*[@id="app"]/main/div/div/div[2]/h2
+2023-12-09 19:09:08 INFO ====== WebDriver manager ======
+2023-12-09 19:09:11 INFO Get LATEST chromedriver version for google-chrome
+2023-12-09 19:09:11 INFO Get LATEST chromedriver version for google-chrome
+2023-12-09 19:09:11 INFO Driver [C:\Users\jo467\.wdm\drivers\chromedriver\win64\120.0.6099.71\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-09 19:09:13 INFO Test 1 start
+2023-12-09 19:09:14 INFO send test to element //*[@id="login"]/div[1]/label/input
+2023-12-09 19:09:14 INFO send test to element //*[@id="login"]/div[2]/label/input
+2023-12-09 19:09:14 INFO Click logging button
+2023-12-09 19:09:16 INFO We find text 401 in error field //*[@id="app"]/main/div/div/div[2]/h2
+2023-12-09 19:09:16 INFO Test 1 start
+2023-12-09 19:09:16 INFO send kitty89 to element //*[@id="login"]/div[1]/label/input
+2023-12-09 19:09:16 INFO send 61d96a3985 to element //*[@id="login"]/div[2]/label/input
+2023-12-09 19:09:16 INFO Click logging button
+2023-12-09 19:09:18 INFO We find text Blog in login page //*[@id="app"]/main/div/div/div[2]/h2
+2023-12-09 19:09:18 INFO Test 3 start
+2023-12-09 19:09:18 INFO Click new post button
+2023-12-09 19:09:18 INFO Send I want drink! to element //*[@id="create-item"]/div/div/div[1]/div/label/input
+2023-12-09 19:09:19 INFO Send Vodka to element //*[@id="create-item"]/div/div/div[2]/div/label/span/textarea
+2023-12-09 19:09:19 INFO Send d1ypc5bnx0g1cvh0c69han6qgepmdynibujohl2dcs47rq5p56cl3wyonaj2elie1i2jw424ekp55z2cb1wyeqgydia0jijdi7o6pxc6eyhbpvuq6ox49xhpy05fpfvmje1vpn7ed43vx6gbs40cfnxseupb5wfcj19bs5znmpvgbwx4tonynslijqfhci5yu00v00an22f3x55rtjnml35w424jy8gug3my66tj2jrke2jzp9s3v27k1m0ywnrqzvwtoi7vpg5l7xd2adf4hv1tkgigo32c2kwnajo3obqj to element //*[@id="create-item"]/div/div/div[3]/div/label/span/textarea
+2023-12-09 19:09:20 INFO Click save new post button
+2023-12-09 19:09:22 INFO We find text I want drink! in login page //*[@id="app"]/main/div/div[1]/h1
+2023-12-09 19:09:22 INFO Test 4 start
+2023-12-09 19:09:22 INFO Click Contact button
+2023-12-09 19:09:22 INFO Send 1HV0A0N59S to element //*[@id="contact"]/div[1]/label/input
+2023-12-09 19:09:23 INFO Send user@user.ru to element //*[@id="contact"]/div[2]/label/input
+2023-12-09 19:09:23 INFO Send zqgemwbz49pp5obyizk35j1yx6te6tdow6mgfv8ncf6ntzwczekswavr7o9ulhtiwl81vwf9ypx5gqto0lps5586znrqfb5ljup7jsdfqc62ybj0d25j69tdjd5zy8l7wfjpyffxq5s3us91bx9l4vr38uznko0tj0czxlvycjfyuwpdoj2j76z7oeklxo6hhlwvu9h1 to element //*[@id="contact"]/div[3]/label/span/textarea
+2023-12-09 19:09:24 INFO Click Send button
+2023-12-09 19:09:26 INFO Switch alert

@@ -1,11 +1,13 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-# реализация класса работы с веб-страницей, открытие, поиск элемента и определение его свойств
+
+
+# реализация класса работы с веб-страницей
 
 class BasePage:
-    def __init__(self, driver):
+    def __init__(self, driver, url):
         self.driver = driver
-        self.base_url = 'https://test-stand.gb.ru'
+        self.base_url = url
 
     # настроили явное ожидание
     def find_element(self, locator, time=10):
@@ -18,3 +20,10 @@ class BasePage:
 
     def go_to_site(self):
         return self.driver.get(self.base_url)
+
+    # ДЗ№3 ФОРМА CONTACT US
+    def switch_to_alert(self):
+        alert_obj = self.driver.switch_to.alert
+        return alert_obj.text
+
+
