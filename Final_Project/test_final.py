@@ -4,6 +4,7 @@ import time
 import random, string
 import logging
 
+
 with open('testdata.yaml') as f:
     testdata = yaml.safe_load(f)
 
@@ -19,7 +20,7 @@ def test_step1(browser):
 
 
 def test_step2(browser):
-    logging.info('Test 1 start')
+    logging.info('Test 2 start')
     testpage = OperationsHelper(browser, testdata['address'])
     testpage.go_to_site()
     testpage.enter_login(testdata['login'])

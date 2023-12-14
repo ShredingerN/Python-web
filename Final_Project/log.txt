@@ -1,0 +1,10 @@
+2023-12-13 21:17:07 INFO ====== WebDriver manager ======
+2023-12-13 21:17:08 INFO Get LATEST chromedriver version for google-chrome
+2023-12-13 21:17:08 INFO Get LATEST chromedriver version for google-chrome
+2023-12-13 21:17:08 INFO Driver [C:\Users\jo467\.wdm\drivers\chromedriver\win64\120.0.6099.71\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-13 21:17:10 INFO Test 1 start
+2023-12-13 21:17:13 INFO Test 2 start
+2023-12-13 21:17:15 INFO Test 3 start
+2023-12-13 21:17:18 INFO Test 4 start
+2023-12-13 21:17:22 INFO Get alert text
+2023-12-13 21:17:22 INFO Form successfully submitted
