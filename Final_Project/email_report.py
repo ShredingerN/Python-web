@@ -8,7 +8,7 @@ from email.mime.application import MIMEApplication
 def sendemail():
     fromaddr = 'ns-wolf@mail.ru'
     toaddr = 'ns-wolf@mail.ru'
-    mypass = 'xSk88JSmLg7E15R4KSwr'
+    mypass = 'rbhUnkZrMzdsdjSGMyQm'
     reportname = 'log.txt'
 
     msg = MIMEMultipart()

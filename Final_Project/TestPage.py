@@ -3,15 +3,19 @@ from selenium.webdriver.common.by import By
 import logging
 import yaml
 
+
+
+
 class TestSearchLocators:
-    #получаем из locators.yaml локаторы, инициализируем словарь
+    # получаем из locators.yaml локаторы, инициализируем словарь
     ids = dict()
-    with open ('locators.yaml') as f:
+    with open('locators.yaml') as f:
         locators = yaml.safe_load(f)
     for locator in locators['xpath'].keys():
         ids[locator] = (By.XPATH, locators['xpath'][locator])
     for locator in locators['css'].keys():
         ids[locator] = (By.CSS_SELECTOR, locators['css'][locator])
+
 
 class OperationsHelper(BasePage):
     def enter_text_into_field(self, locator, word, description=None):
@@ -121,3 +125,5 @@ class OperationsHelper(BasePage):
         text = self.switch_to_alert()
         logging.info(text)
         return text
+
+

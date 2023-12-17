@@ -1,4 +1,5 @@
 import pytest
+import requests
 import yaml
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -6,7 +7,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from email_report import sendemail
 
-with open('testdata.yaml') as f:
+with open('testdata.yaml', encoding='utf-8') as f:
     testdata = yaml.safe_load(f)
 
 
@@ -28,7 +29,15 @@ def browser():
     driver.quit()
     sendemail()
 
+
 # @pytest.fixture(scope='session')
 # def report():
 #     yield
 #     sendemail()
+
+
+@pytest.fixture()
+def token():
+    result = requests.post(url=testdata["url"], data={"username": testdata["login"],
+                                                      "password": testdata["password"]})
+    return result.json()["token"]
