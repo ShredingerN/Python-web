@@ -41,7 +41,7 @@ class HelperAPI:
     def get_not_my_posts(self, token):
         try:
             res_get = requests.get(url=self.base_url + testdata['post'], headers={'X-Auth-Token': token},
-                                   params={'owner': 'notMe'})
+                                   params={'owner': 'notMe', 'order': 'ASC' })
             print(res_get)
             return res_get
         except:

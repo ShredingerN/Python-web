@@ -10,6 +10,6 @@ post: 'api/posts'
 url: https://test-stand.gb.ru/gateway/login
 url_post: https://test-stand.gb.ru/api/posts
 title: 'О котиках'
-not_my_title: 'Sea'
+not_my_title: 'Русские пельмени'
 description: 'Котофеич'
 content: 'Иван Петрович'
